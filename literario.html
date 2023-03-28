@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LITERARIO</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            overflow-x: hidden;
+            background-image:url("literario.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: repeat;
+            backdrop-filter: blur(4px);
+        }
+        h1{
+            text-align:center;
+            font-size:40px;
+            margin-top:30px;
+            letter-spacing: 1px;
+            color: white;
+            text-shadow:1px 1px 1px rgb(225, 225, 225,0.5);
+        }
+        p{
+            border:solid 2px;
+            border-radius: 6px;
+            text-align:justify;
+            padding:15px 15px ;
+            margin: 50px auto;
+            width: 800px;
+            font-size: 15px;
+            background-color:rgb(225, 225, 225,0.5);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-shadow:3px 3px 3px rgb(26, 26, 26,0.5);
+        }
+        p:hover{
+            border: none;
+            box-shadow:5px 5px 5px rgb(225, 225, 225,0.5);
+        }
+        h4{
+            text-align: center;
+            font-weight: 700;
+            font-size: 30px;
+            color: white;
+            text-shadow:1px 1px 1px rgb(225, 225, 225,0.5);
+        }
+        #list ul{
+            text-align: center;
+            list-style: none;
+            border:solid 2px;
+            border-radius:300px ;
+            width:200px;
+            margin: auto;
+            padding: 30px;
+            gap: 10px;
+            background-color:rgb(225, 225, 225,0.5) ;
+            box-shadow:5px 5px 5px rgb(26, 26, 26,0.5);
+        }
+        #timer{
+            display: flex;
+            justify-content:left;
+            margin-left:350px;
+        }
+        #timer p{
+            color:white;
+            background-color:rgb(26,26,26,0.5);
+            width:150px;
+            margin-left:130px;
+            margin-right:130px;
+        }
+        #list li{
+            padding:5px;
+            font-size: 17px;
+            font-family: Verdana;
+        }
+        footer{
+            background-color:rgb(138, 43, 226,0.5);
+            
+            
+            
+            overflow: hidden;
+            margin-top: 50px;
+        }
+        #foot01{
+            font-size: 17px;
+            text-align: justify;
+            text-align: center;
+            color: white;
+
+        }
+        #foot01 img{
+            height: 40px;
+            width:40px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>LITERARIO</h1>
+    <div id="timer">
+        <p>Countdown</p>
+        <!-- Display the countdown timer in an element -->
+        <p id="demo"></p>
+    </div>
+    <p>
+        Expressing something is not easy for everybody, but everybody has to do this because all humans have something to express. With the same motive, the Department of English of GLA University introduced a Literature Club in 2015 named ‘Literario.’ This club encourages students to reveal themselves, their perceptions and emotions and build confidence in their creative spirits.
+    
+    ‘Literario’, the officially declared literary club of GLAU, embodies a platform to enrich the taste of literature. It gives an impeccable stage to students interested in exhibiting their literary skills. It evokes the diction of participation and team work.  
+    
+    ‘Literario’ brings in activities and challenges such as Director’s cut, Instantania, Debates, Discussion Fiesta, Declamation, Quizzes, etc., that brush up the literary skills of an individual from the grass-root level. ‘Literario’ also works upon inviting various renowned guest speakers from different fields who share inspirational stories, experiences and talks.
+    
+    ‘Literario’ organizes ‘Brij Literature Festival’ (BLF) - the first-ever Literature Festival in the birthplace of Lord Krishna -embodying a rich heritage and a great literary history.   It fosters the tremendous academic and cultural background and portrays the immense profoundness of literature Brij holds. 
+    
+    Literario is truly a club of the students, by the students and for the students.</p>
+    
+   
+    
+    
+    <div id="list">
+    <h4>Events Organized</h4>
+    <ul>
+    <li>GLA's Got Talent</li>
+    <li>Kathyogita</li>
+    <li>Marvel's Trivia</li>
+    <li>Guest Talks</li>
+    <li>Personality Development Work Shop</li>
+    <li>Photography Workshop</li>
+    <li>Incredible India</li>
+    </ul>
+    </div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Mar 19, 2023 12:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    <footer>
+        <div id="foot01">
+            Faculty Mentor: Dr Mamta Bhatnagar,<br> Dept of English, GLAU, Mathura.<br> Mobile no: 9927605568.<br>
+    
+            Club Email: literario@gla.ac.in<br>
+            Website: www.literario.co.in<br>
+            
+            <a href=" https://www.facebook.com/580723925400180/"><img src="facebook.svg"></a>
+            <a href="https://www.instagram.com/literario_glau/"><img src="insta.svg"> </a>
+            
+        </div>
+    </footer>
+</body>
+</html>

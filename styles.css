@@ -1,0 +1,333 @@
+html{
+    scroll-behavior:smooth;
+}
+body{
+    padding: 0px;
+    margin:0px;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:solid 2px red;
+}
+header img{
+    height:100px;
+    width: 160px;
+    margin-left:100px;
+}
+#nav {
+    margin-right:60px;
+    margin-top:50px;
+}
+#nav a{
+    text-decoration: none;
+    color:black;
+    text-transform: uppercase;
+    margin-right: 35px;
+    letter-spacing:1px;
+    font-size: 15px;
+    font-family:"Roboto";
+    font-weight: 500;
+    position: relative;
+    
+}
+#nav a:hover{
+    color:red;
+    text-shadow:1px 1px 1px rgb(26,26,26,0.5);
+}
+#nav a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color:red;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+@media (hover: hover) and (pointer: fine) {
+    #nav a:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
+#sec1{
+    background-image:url("bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80%;
+    overflow: hidden;
+}
+#sec1 span div{
+    background-color:rgb(255, 255, 255,0.7);
+    width:600px;
+    height:100%;
+    overflow:hidden;
+}
+#sec1 span h1{
+    font-family: "Roboto Slab";
+    font-size: 70px;
+    margin-left: 20px;
+    text-shadow:1px 1px 1px rgb(26,26,26,0.5);
+    color:rgb(0, 77, 0);
+    margin-bottom:20px;
+}
+#sec1 span p{
+    font-family:"Roboto";
+    color:rgb(38, 38, 115);
+    font-weight: 500;
+    width: 370px;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    font-size:14px;
+}
+hr{
+    margin-left: 20px;
+}
+#sec1 span a{
+    color:black;
+    font-size:15px;
+    margin-left:500px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+#sec1 span a::after{
+    content: "";
+    background: white;
+      mix-blend-mode: exclusion;
+    width: calc(100% + 20px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  
+ #sec1 span a:hover::after{
+      height: calc(100% + 8px)
+  }
+#categories h2{
+    text-align:center;
+    font-family:"Roboto Slab";
+    margin-top:50px;
+    font-size: 40px;
+    color:rgb(0, 77, 0);
+  }
+.cards{
+    display: flex;
+    margin-top:-190px;
+    padding: 0px;
+}
+  *
+  {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  h5
+  {
+    margin:0px;
+    font-size:1.4em;
+    font-weight:700;
+    font-family:"Roboto Slab";
+  }
+  
+  p
+  {
+    font-size:12px;
+    font-family: "Roboto";
+  }
+  
+  .center
+  {
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #center1{
+    margin-left: 70px;
+  }
+  #center2{
+    margin-left:-60;
+  }
+  #center3{
+    margin-left:-60;
+  }
+  #center4{
+    margin-left:-60px;
+    margin-right:60px;
+  }
+  .property-card
+{
+  height:18em;
+  width:14em;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+
+/* Top Half of card, image. */
+
+.property-image
+{
+  height:6em;
+  width:14em;
+  padding:1em 2em;
+  position:Absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+#property-image1{
+    background-image: url("img1.jpg");
+    background-size:cover;
+  background-repeat:no-repeat;
+}
+#property-image2{
+    background-image: url("img2.jpg");
+    background-size:cover;
+  background-repeat:no-repeat;
+}
+#property-image3{
+    background-image: url("img33.jpg");
+    background-size:cover;
+  background-repeat:no-repeat;
+}
+#property-image4{
+    background-image: url("img4.jpg");
+    background-size:cover;
+  background-repeat:no-repeat;
+}
+
+
+/* Bottom Card Section */
+
+.property-description
+{
+  background-color: #FAFAFC;
+  height:12em;
+  width:14em;
+  position:absolute;
+  bottom:0em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align:center;
+}
+
+/* Social Icons */
+
+.property-social-icons
+{
+  width:1em;
+  height:1em;
+  background-color:black;
+  position:absolute;
+  bottom:1em;
+  left:1em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Property Cards Hover States */
+
+.property-card:hover .property-description
+{
+  height:0em;
+  padding:0px 1em;
+}
+.property-card:hover .property-image
+{
+  height:18em;
+}
+
+.property-card:hover .property-social-icons
+{
+  background-color:white;
+}
+
+.property-card:hover .property-social-icons:hover
+{
+  background-color:green;
+  cursor:pointer;
+}
+footer{
+    overflow: hidden;
+    background-image: linear-gradient(90deg,rgb(0, 172, 230),rgb(77, 210, 255));
+    margin-top:-130px;
+    height:35%;
+    color: white;
+}
+footer span{
+    display:flex;
+    justify-content: space-between;
+    margin-top:60px;
+}
+footer span h3{
+    font-family:"Roboto";
+    font-size:15px;
+    font-weight: 500;
+    letter-spacing:1px;
+    margin-bottom:40px;
+}
+footer span p{
+    font-family:"Roboto";
+    font-size:14px;
+    margin-top: 20px;
+    width:380px;
+}
+#div1 {
+    margin-left:150px;
+}
+#div1 a{
+    text-decoration: none;
+    color: white;
+}
+#div2{
+    margin-right:120px;
+}
+#div2 img{
+    height:150px;
+    width: 230px;
+    margin-top:-60px;
+    margin-left:-40px;
+}
+#div3{
+    margin-right: 200px;
+}
+#social svg{
+    height:40px;
+    width: 40px;
+    border:solid 1px white;
+    margin-right:15px;
+    border-radius:25px;
+    fill:white;
+    transition: rotate 0.3s ease-in-out;
+}
+#social svg:hover{
+    rotate: y 90deg;
+}
+
